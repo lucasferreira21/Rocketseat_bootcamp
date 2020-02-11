@@ -1,0 +1,11 @@
+#### Iniciar Projeto ####
+--npm init -y
+
+#### Adicionando Express ####
+npm install express
+
+#### Adicionando Nodemon #### Reiniciar Server automaticamente
+npm install -D nodemon
+
+#### Adicionando Nunjucks #### Template Engine
+npm install nunjucks

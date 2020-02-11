@@ -1,0 +1,24 @@
+{% extends "layout.njk" %} 
+
+{% block head %}
+  <title>Receitas - Foodfy</title>
+{% endblock %}
+
+{% block content %}
+  <div class="container-acess">
+    <div class="itens">
+
+      {% for i in range(0, receitas.length) %}
+        <a href="/receita/{{i}}">
+          <div class="item" id="receita_{{receitas[i].id}}">
+            <img src="{{receitas[i].image}}" alt="{{receitas[i].title}}">
+            <h2>{{receitas[i].title}}</h2>
+            <p>{{receitas[i].author}}</p>
+          </div>
+        </a>
+      {% endfor %}
+
+    </div>
+  </div>
+
+{% endblock %}   
